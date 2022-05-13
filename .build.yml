@@ -4,15 +4,15 @@ environment:
   site: sites
 tasks:
 - package-technical: |
-    cd technical
+    cd $site/technical
     tar -cvz . > ../technical.tar.gz
     acurl -f https://pages.sr.ht/publish/2bu2t.online -Fcontent=@technical.tar.gz
     acurl -f https://pages.sr.ht/publish/frsqr.xyz -Fcontent=@technical.tar.gz
 - package-cofob-ru: |
-    cd cofob.ru
+    cd $site/cofob.ru
     tar -cvz . > ../cofob.tar.gz
     acurl -f https://pages.sr.ht/publish/cofob.ru -Fcontent=@cofob.tar.gz
 - package-firesquare: |
-    cd firesquare.ru
+    cd $site/firesquare.ru
     tar -cvz . > ../firesquare.tar.gz
     acurl -f https://pages.sr.ht/publish/firesquare.ru -Fcontent=@firesquare.tar.gz
