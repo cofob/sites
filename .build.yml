@@ -9,3 +9,4 @@ tasks:
 - upload: |
     acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
     acurl -f https://pages.sr.ht/publish/frsqr.xyz -Fcontent=@site.tar.gz
+    acurl -f https://pages.sr.ht/publish/2bu2t.online -Fcontent=@site.tar.gz
