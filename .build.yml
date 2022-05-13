@@ -1,0 +1,12 @@
+image: alpine/latest
+oauth: pages.sr.ht/PAGES:RW
+environment:
+  site1: firesquare.ru
+  site2: frsqr.xyz
+tasks:
+- package: |
+    cd $site
+    tar -cvz . > ../site.tar.gz
+- upload: |
+    acurl -f https://pages.sr.ht/publish/$site1 -Fcontent=@site.tar.gz
+    acurl -f https://pages.sr.ht/publish/$site2 -Fcontent=@site.tar.gz
