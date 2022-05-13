@@ -1,12 +1,18 @@
 image: alpine/latest
 oauth: pages.sr.ht/PAGES:RW
 environment:
-  site: firesquare.ru
+  site: sites
 tasks:
-- package: |
-    cd $site
-    tar -cvz . > ../site.tar.gz
-- upload: |
-    acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
-    acurl -f https://pages.sr.ht/publish/frsqr.xyz -Fcontent=@site.tar.gz
-    acurl -f https://pages.sr.ht/publish/2bu2t.online -Fcontent=@site.tar.gz
+- package-technical: |
+    cd technical
+    tar -cvz . > ../technical.tar.gz
+    acurl -f https://pages.sr.ht/publish/2bu2t.online -Fcontent=@technical.tar.gz
+    acurl -f https://pages.sr.ht/publish/frsqr.xyz -Fcontent=@technical.tar.gz
+- package-cofob-ru: |
+    cd cofob.ru
+    tar -cvz . > ../cofob.tar.gz
+    acurl -f https://pages.sr.ht/publish/cofob.ru -Fcontent=@cofob.tar.gz
+- package-firesquare: |
+    cd firesquare.ru
+    tar -cvz . > ../firesquare.tar.gz
+    acurl -f https://pages.sr.ht/publish/firesquare.ru -Fcontent=@firesquare.tar.gz

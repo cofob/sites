@@ -1,3 +1,3 @@
 # Info
 
-This is [firesquare.ru](https://firesquare.ru) stub website.
+This is collection of sr.ht-hosted websites.
