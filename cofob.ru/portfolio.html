@@ -11,235 +11,305 @@
 
     <meta name="theme-color" content="#7952b3" />
   </head>
-  <body class="text-white bg-dark">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="mb-auto">
-        <div>
-          <h3 class="float-md-start mb-0">cofob</h3>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/key.asc">PGP</a>
+  <body class="bg-dark body-shadow text-center text-white">
+    <div class="p-3 text-white">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fw-bold" href="/">cofob</a>
+          <div class="nav d-flex">
+            <a class="nav-link text-white" href="/key.asc" target="_blank"
+              >PGP</a
+            >
             <a
-              class="nav-link"
+              class="nav-link text-white"
               href="https://zhub.link/@cofob"
-              title="zhub.link/@cofob"
+              target="_blank"
               rel="me"
               >Mastodon</a
             >
-            <a class="nav-link" href="https://t.me/g00d_adm1n">Telegram</a>
-          </nav>
+            <a
+              class="nav-link text-white"
+              href="https://t.me/g00d_adm1n"
+              target="_blank"
+              >Telegram</a
+            >
+          </div>
         </div>
-      </header>
+      </nav>
+    </div>
 
-      <main class="px-3">
-        <div class="container pt-3">
-          <h1 class="pb-3">💼 Portfolio</h1>
+    <main class="container pt-2 pt-md-3 pt-lg-4">
+      <div class="container pt-3">
+        <h1 class="pb-5 fw-bold">💼 Portfolio</h1>
 
-          <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
-            <div class="col pb-3">
-              <div class="card">
-                <div class="card-body bg-dark">
-                  <h5 class="card-title">Minecraft servers</h5>
-                  <p class="card-text">
-                    A unique survival server without donations. Inside it uses
-                    its own technology to deploy. My biggest project.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <a href="https://2bu2t.ru/" class="btn btn-outline-light"
-                      >Visit</a
-                    >
-                  </div>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
+          <div class="col pb-3">
+            <div class="card">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">FAP</h5>
+                <p class="card-text">
+                  FAP stays for Forum on
+                  <a
+                    href="https://activitypub.rocks/"
+                    class="text-white"
+                    target="_blank"
+                    >Activity Pub</a
+                  >. Written with Rust.
+                </p>
+                <div class="d-grid gap-2">
+                  <a href="#" class="btn btn-outline-light disabled">WIP</a>
+                  <a
+                    href="https://git.sr.ht/~cofob/fap"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >Source code</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col pb-3">
-              <div class="card">
-                <div class="card-body bg-dark">
-                  <h5 class="card-title">AlfisViewer</h5>
-                  <p class="card-text">
-                    Alfis blockchain observer written in 3 days in Django.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <a
-                      href="https://viewer.alfis.name/"
-                      class="btn btn-outline-light"
-                      >Visit</a
-                    >
-                    <a
-                      href="https://sr.ht/~cofob/AlfisViewer/"
-                      class="btn btn-outline-light"
-                      >Source code</a
-                    >
-                  </div>
+          </div>
+          <div class="col pb-3">
+            <div class="card">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">Autodonate</h5>
+                <p class="card-text">
+                  Auto sell site written with Svelte and Django.
+                </p>
+                <div class="d-grid gap-2">
+                  <a href="#" class="btn btn-outline-light disabled">WIP</a>
+                  <a
+                    href="https://github.com/fire-square/autodonate"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >Source code</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col pb-3">
-              <div class="card">
-                <div class="card-body bg-dark">
-                  <h5 class="card-title">Autodonate</h5>
-                  <p class="card-text">
-                    Auto sell site written with Svelte and Django.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <a href="#" class="btn btn-outline-light disabled">WIP</a>
-                    <a
-                      href="https://github.com/fire-square/autodonate"
-                      class="btn btn-outline-light"
-                      >Source code</a
-                    >
-                  </div>
+          </div>
+          <div class="col pb-3">
+            <div class="card">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">Minecraft servers</h5>
+                <p class="card-text">
+                  A unique survival server without donations. Inside it uses its
+                  own technology to deploy. My biggest project.
+                </p>
+                <div class="d-grid gap-2">
+                  <a
+                    href="https://2bu2t.ru/"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >Visit</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col pb-3">
-              <div class="card">
-                <div class="card-body bg-dark">
-                  <h5 class="card-title">ItemControl</h5>
-                  <p class="card-text">
-                    A plugin that automatically removes illegal enchantments on
-                    minecraft servers.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <a
-                      href="https://www.spigotmc.org/resources/itemcontrol.97319/"
-                      class="btn btn-outline-light"
-                      >View</a
-                    >
-                    <a
-                      href="https://git.averyan.ru/firesquare/public/plugins/ItemControl"
-                      class="btn btn-outline-light"
-                      >Source code</a
-                    >
-                  </div>
+          </div>
+          <div class="col pb-3">
+            <div class="card">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">AlfisViewer</h5>
+                <p class="card-text">
+                  Alfis blockchain observer written in 3 days in Django.
+                </p>
+                <div class="d-grid gap-2">
+                  <a
+                    href="https://viewer.alfis.name/"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >Visit</a
+                  >
+                  <a
+                    href="https://sr.ht/~cofob/AlfisViewer/"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >Source code</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col pb-3">
-              <div class="card">
-                <div class="card-body bg-dark">
-                  <h5 class="card-title">BlockRename</h5>
-                  <p class="card-text">
-                    A plugin that blocks blacklisted anvil renames on minecraft
-                    servers.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <a
-                      href="https://www.spigotmc.org/resources/blockrename.96017/"
-                      class="btn btn-outline-light"
-                      >View</a
-                    >
-                    <a
-                      href="https://git.averyan.ru/firesquare/public/plugins/BlockRename"
-                      class="btn btn-outline-light"
-                      >Source code</a
-                    >
-                  </div>
+          </div>
+          <div class="col pb-3">
+            <div class="card">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">Personal website</h5>
+                <p class="card-text">
+                  Source code of this website. Written without any JS, on
+                  straight Bootstrap 5 💪
+                </p>
+                <div class="d-grid gap-2">
+                  <a
+                    href="https://git.sr.ht/~cofob/sites/tree/master/item/cofob.ru"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >Source code</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col pb-3">
-              <div class="card">
-                <div class="card-body bg-dark">
-                  <h5 class="card-title">Shutdown</h5>
-                  <p class="card-text">
-                    A plugin that makes a countdown to reload with fancy
-                    placeholders on minecraft servers.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <a
-                      href="https://www.spigotmc.org/resources/shutdown.101002/"
-                      class="btn btn-outline-light"
-                      >View</a
-                    >
-                    <a
-                      href="https://git.averyan.ru/firesquare/public/plugins/shutdown"
-                      class="btn btn-outline-light"
-                      >Source code</a
-                    >
-                  </div>
+          </div>
+          <div class="col pb-3">
+            <div class="card">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">ItemControl</h5>
+                <p class="card-text">
+                  A plugin that automatically removes illegal enchantments on
+                  minecraft servers.
+                </p>
+                <div class="d-grid gap-2">
+                  <a
+                    href="https://www.spigotmc.org/resources/itemcontrol.97319/"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >View</a
+                  >
+                  <a
+                    href="https://git.averyan.ru/firesquare/public/plugins/ItemControl"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >Source code</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col pb-3">
-              <div class="card">
-                <div class="card-body bg-dark">
-                  <h5 class="card-title">ClansFork</h5>
-                  <p class="card-text">
-                    Open-source fork of Clans minecraft plugin with some critical bugfixes.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <a
-                      href="https://sr.ht/~cofob/ClansFork/"
-                      class="btn btn-outline-light"
-                      >Source code</a
-                    >
-                  </div>
+          </div>
+          <div class="col pb-3">
+            <div class="card">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">BlockRename</h5>
+                <p class="card-text">
+                  A plugin that blocks blacklisted anvil renames on minecraft
+                  servers.
+                </p>
+                <div class="d-grid gap-2">
+                  <a
+                    href="https://www.spigotmc.org/resources/blockrename.96017/"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >View</a
+                  >
+                  <a
+                    href="https://git.averyan.ru/firesquare/public/plugins/BlockRename"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >Source code</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col pb-3">
-              <div class="card">
-                <div class="card-body bg-dark">
-                  <h5 class="card-title">DiscordRPC</h5>
-                  <p class="card-text">
-                    Program that allows you to set custom Discord Rich Presence
-                    status with python code.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <a
-                      href="https://github.com/cofob/discordrpc"
-                      class="btn btn-outline-light"
-                      >Source code</a
-                    >
-                  </div>
+          </div>
+          <div class="col pb-3">
+            <div class="card">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">Shutdown</h5>
+                <p class="card-text">
+                  A plugin that makes a countdown to reload with fancy
+                  placeholders on minecraft servers.
+                </p>
+                <div class="d-grid gap-2">
+                  <a
+                    href="https://www.spigotmc.org/resources/shutdown.101002/"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >View</a
+                  >
+                  <a
+                    href="https://git.averyan.ru/firesquare/public/plugins/shutdown"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >Source code</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col pb-3">
-              <div class="card">
-                <div class="card-body bg-dark">
-                  <h5 class="card-title">Emercoin.py</h5>
-                  <p class="card-text">
-                    Python library for interacting with the NVS subsystem of the Emercoin blockchain.
-                  </p>
-                  <div class="d-grid gap-2">
-                    <a
-                      href="https://sr.ht/~cofob/Emercoin.py/"
-                      class="btn btn-outline-light"
-                      >Source code</a
-                    >
-                  </div>
+          </div>
+          <div class="col pb-3">
+            <div class="card">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">ClansFork</h5>
+                <p class="card-text">
+                  Open-source fork of Clans minecraft plugin with some critical
+                  bugfixes.
+                </p>
+                <div class="d-grid gap-2">
+                  <a
+                    href="https://sr.ht/~cofob/ClansFork/"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >Source code</a
+                  >
                 </div>
               </div>
             </div>
-            <div class="col pb-3">
-              <div class="card">
-                <div class="card-body bg-dark">
-                  <h5 class="card-title">Check out my git for more!</h5>
-                  <div class="d-grid gap-2">
-                    <a
-                      href="https://github.com/cofob"
-                      class="btn btn-outline-light"
-                      >GitHub</a
-                    >
-                    <a
-                      href="https://git.averyan.ru/cofob"
-                      class="btn btn-outline-light"
-                      >GitLab</a
-                    >
-                    <a href="https://sr.ht/~cofob" class="btn btn-outline-light"
-                      >SourceHut</a
-                    >
-                  </div>
+          </div>
+          <div class="col pb-3">
+            <div class="card">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">DiscordRPC</h5>
+                <p class="card-text">
+                  Program that allows you to set custom Discord Rich Presence
+                  status with python code.
+                </p>
+                <div class="d-grid gap-2">
+                  <a
+                    href="https://github.com/cofob/discordrpc"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >Source code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col pb-3">
+            <div class="card">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">Emercoin.py</h5>
+                <p class="card-text">
+                  Python library for interacting with the NVS subsystem of the
+                  Emercoin blockchain.
+                </p>
+                <div class="d-grid gap-2">
+                  <a
+                    href="https://sr.ht/~cofob/Emercoin.py/"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >Source code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col pb-3">
+            <div class="card">
+              <div class="card-body bg-dark">
+                <h5 class="card-title">Check out my git for more!</h5>
+                <div class="d-grid gap-2">
+                  <a
+                    href="https://github.com/cofob"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://git.averyan.ru/cofob"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >GitLab</a
+                  >
+                  <a
+                    href="https://sr.ht/~cofob"
+                    class="btn btn-outline-light"
+                    target="_blank"
+                    >SourceHut</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </main>
-
-      <footer class="mt-auto text-white-50"><!-- Stub --></footer>
-    </div>
+      </div>
+    </main>
   </body>
 </html>
