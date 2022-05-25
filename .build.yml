@@ -7,6 +7,8 @@ tasks:
     cd $site/technical
     tar -cvz . > technical.tar.gz
     acurl -f https://pages.sr.ht/publish/2bu2t.online -Fcontent=@technical.tar.gz
+    acurl -f https://pages.sr.ht/publish/2buldzha2t.ru -Fcontent=@technical.tar.gz
+    acurl -f https://pages.sr.ht/publish/2bu2t.ru -Fcontent=@technical.tar.gz
     acurl -f https://pages.sr.ht/publish/frsqr.xyz -Fcontent=@technical.tar.gz
 - package-cofob-ru: |
     cd $site/cofob.ru
